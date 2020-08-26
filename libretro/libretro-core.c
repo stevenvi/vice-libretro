@@ -582,6 +582,8 @@ static int process_cmdline(const char* argv)
             Add_Option("-cartA");
         else if (strendswith(argv, ".b0"))
             Add_Option("-cartB");
+        else if (strendswith(argv, ".prg"))
+            Add_Option("-cartgeneric");
 
         char vic20buf1[6]   = "\0";
         char vic20buf2[6]   = "\0";
